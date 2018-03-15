@@ -13,6 +13,7 @@ namespace First_Project
             Console.WriteLine("Don`t say, that i`m eblying");
 	    Console.WriteLine("Eldyesh eshe i kak");
 	    Console.WriteLine("Zaodno i proverim kak ty git osvoil");
+            Console.WriteLine("Ta norm osvoil)))");
         }
     }
 }

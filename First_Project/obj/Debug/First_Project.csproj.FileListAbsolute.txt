@@ -1,1 +1,6 @@
 D:\Repositories\Dan_Repository\First_Project\bin\Debug\First_Project.exe.config
+D:\Repositories\Dan_Repository\First_Project\bin\Debug\First_Project.exe
+D:\Repositories\Dan_Repository\First_Project\bin\Debug\First_Project.pdb
+D:\Repositories\Dan_Repository\First_Project\obj\Debug\First_Project.csprojResolveAssemblyReference.cache
+D:\Repositories\Dan_Repository\First_Project\obj\Debug\First_Project.exe
+D:\Repositories\Dan_Repository\First_Project\obj\Debug\First_Project.pdb
