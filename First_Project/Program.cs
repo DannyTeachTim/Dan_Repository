@@ -14,6 +14,11 @@ namespace First_Project
 	    Console.WriteLine("Eldyesh eshe i kak");
 	    Console.WriteLine("Zaodno i proverim kak ty git osvoil");
             Console.WriteLine("Ta norm osvoil)))");
+
+        jopa:
+            Console.WriteLine("Privet, you are in jopa!");
+
+            goto jopa;
         }
     }
 }
