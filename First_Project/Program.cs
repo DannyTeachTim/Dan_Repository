@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace First_Project
 {
@@ -10,57 +11,33 @@ namespace First_Project
     {
         static void Main(string[] args)
         {
-            /*Console.WriteLine("Don`t say, that i`m eblying");
-	        Console.WriteLine("Eldyesh eshe i kak");
-	        Console.WriteLine("Zaodno i proverim kak ty git osvoil");
-            Console.WriteLine("Ta norm osvoil)))");
+            string search;
 
-        jopa:
-            Console.WriteLine("Privet, you are in jopa!");
-
-            goto jopa;*/
-
-            //Моё дз по тому, что я говорил:
-
-            #region Number one
-
-            int a = 10;
-            int b = 5;
-            for (int i = 0; i < a; i++)
+            for(;;)
             {
-                for(int j = 0; j < b; j++)
-                    Console.Write("*");
-                Console.Write("\n");
-            }
-
-            #endregion
-
-            #region Number two
-
-            //Опять рисование херни
-
-            #endregion
-
-            #region Number three
-
-            //Опять рисование херни
-
-            #endregion
-
-            #region Number four
-
-            int shit = 5;
-            int small_shit = 4;
-            do
-            {
-                shit *= small_shit--;
-            } while (small_shit != 0);
-
-            Console.WriteLine(shit);
-
-            #endregion
-
-            //Потратил 10 минут...
+                Console.Write("Enter the way to file: "); //@"D:\Repositories\test.txt"
+                search = Console.ReadLine();
+                try
+                {
+                    FileStream file = new FileStream(@search, FileMode.Open);
+                    StreamReader reader = new StreamReader(file);
+                    Console.WriteLine();
+                    Console.WriteLine(reader.ReadToEnd());
+                    Console.WriteLine();
+                    reader.Close();
+                    break;
+                }
+                catch (FileNotFoundException)
+                {
+                    Console.WriteLine("Error. File not found.");
+                    Console.WriteLine();
+                    continue;
+                }
+                catch (ArgumentException)
+                {
+                    continue;
+                }
+            }          
         }
     }
 }
